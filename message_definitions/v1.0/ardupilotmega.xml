@@ -333,6 +333,19 @@
         <param index="7">Empty</param>
       </entry>
     </enum>
+    <!-- ABZ interview - task 2 - enum -->
+    <enum name="ABZ_ENUM">
+      <entry value="1" name="ABZ_ENTRY">
+        <description>ABZ entry param 1</description>
+        <param index="1" value="1">Param 1.</param>
+        <param index="2">Empty.</param>
+        <param index="3">Empty.</param>
+        <param index="4">Empty.</param>
+        <param index="5">Empty.</param>
+        <param index="6">Empty.</param>
+        <param index="7">Empty.</param>
+      </entry>
+    </enum>
     <enum name="SCRIPTING_CMD">
       <entry value="0" name="SCRIPTING_CMD_REPL_START">
         <description>Start a REPL session.</description>
@@ -1622,6 +1635,11 @@
       <description>RPM sensor output.</description>
       <field type="float" name="rpm1">RPM Sensor1.</field>
       <field type="float" name="rpm2">RPM Sensor2.</field>
+    </message>
+    <!-- ABZ interview - task 2 -->
+    <message id="1500" name="MSG_ABZ_ID1500">
+      <description>ABZ Messege ID 1500</description>
+      <field type="uint8_t" name="rpm1" enum="ABZ_ENUM">ABZ Message param 1.</field>
     </message>
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">

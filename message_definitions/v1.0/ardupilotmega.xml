@@ -1639,7 +1639,7 @@
     <!-- ABZ interview - task 2 -->
     <message id="1500" name="MSG_ABZ_ID1500">
       <description>ABZ Messege ID 1500</description>
-      <field type="uint8_t" name="rpm1" enum="ABZ_ENUM">ABZ Message param 1.</field>
+      <field type="uint32_t" name="abz_enum" enum="ABZ_ENUM">ABZ Message param 1.</field>
     </message>
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
